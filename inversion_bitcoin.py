@@ -9,6 +9,8 @@ def bitcoinToEuros(bitcoin_amount, bitcoin_value_euros):
 
     euros_value=bitcoin_amount*bitcoin_value_euros
 
+    euros_value=str(euros_value)
+
     return ('Tienes un total de: '+euros_value+' tras haber hecho el cambio de Bitcoin')
 
 
@@ -33,4 +35,4 @@ if __name__ == "__main__":
 
 
     bitcoinToEuros(bitcoin_amount,bitcoin_value_euros)
-    
+
