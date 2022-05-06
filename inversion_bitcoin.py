@@ -11,7 +11,7 @@ def bitcoinToEuros(bitcoin_amount, bitcoin_value_euros):
 
     euros_value=str(euros_value)
 
-    return ('Tienes un total de: '+euros_value+' tras haber hecho el cambio de Bitcoin')
+    print ('Tienes un total de: '+euros_value+' tras haber hecho el cambio de Bitcoin')
 
 
 #en esta fucnión se quiere que se avise a partir de un límite
