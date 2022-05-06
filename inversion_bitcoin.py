@@ -18,7 +18,7 @@ def bitcoinToEuros(bitcoin_amount, bitcoin_value_euros):
 def UnderLimit(limit, bitcoin_value_euros):
 
     if(bitcoin_value_euros<limit):
-        return('En este momento, Bitcoin ha bajado y tiene un valor de: '+limit)
+        print('En este momento, Bitcoin ha bajado y tiene un valor de: '+limit)
 
 
     else:
@@ -35,4 +35,11 @@ if __name__ == "__main__":
 
 
     bitcoinToEuros(bitcoin_amount,bitcoin_value_euros)
+
+
+    limit=input('¿A partir de qué límite se quiere que se le avise?: ')
+    #float porque a lo mejor el usuario no quiere un número entero
+    limit=float(limit)
+
+    UnderLimit(limit, bitcoin_value_euros)
 
