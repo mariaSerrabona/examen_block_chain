@@ -26,3 +26,11 @@ def UnderLimit(limit, bitcoin_value_euros):
 #creamos un main que nos ejecute el fichero
 if __name__ == "__main__":
 
+    bitcoin_value_euros=34670.625       #valor del bitcoin en este momento
+
+    bitcoin_amount=input('Introduzca la cantidad de Bitcoin que posee: ')
+    bitcoin_amount=int(bitcoin_amount)
+
+
+    bitcoinToEuros(bitcoin_amount,bitcoin_value_euros)
+    
