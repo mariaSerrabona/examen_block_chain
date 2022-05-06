@@ -18,7 +18,8 @@ def bitcoinToEuros(bitcoin_amount, bitcoin_value_euros):
 def UnderLimit(limit, bitcoin_value_euros):
 
     if(bitcoin_value_euros<limit):
-        print('En este momento, Bitcoin ha bajado y tiene un valor de: '+limit)
+        limit=str(limit)
+        print('En este momento, Bitcoin se encuentra por debajo del límite establecido: '+limit)
 
 
     else:
